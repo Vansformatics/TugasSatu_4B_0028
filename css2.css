@@ -35,6 +35,7 @@ h3{
     color: white;
 }
 
+/* Styling untuk setiap baris tugas */
 li { 
     background: white; 
     margin-bottom: 10px; 
@@ -44,4 +45,11 @@ li {
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+/* Styling teks saat tugas selesai (dicoret) */
+.done { 
+    text-decoration: line-through; 
+    color: gray; 
+    opacity: 0.6;
 }
