@@ -75,4 +75,8 @@ btnTambah.addEventListener("click", function() {
     listBaru.append(infoTugas, btnStatus, btnEdit, btnHapus);
     daftarTugas.appendChild(listBaru);
 
+    // Auto reset input setelah menambahkan tugas
+    inputTask.value = "";
+    inputDate.value = "";
+    inputTask.focus(); // Kembalikan fokus ke input tugas setelah menambahkan
 });
