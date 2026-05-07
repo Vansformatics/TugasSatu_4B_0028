@@ -74,3 +74,13 @@ li {
     border-radius: 4px; 
     cursor: pointer; 
 }
+
+/* Tombol Hapus */
+.delete-btn { 
+    background-color: #dc3545; 
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
