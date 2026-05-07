@@ -18,4 +18,6 @@ btnTambah.addEventListener("click", function(){
     inputValue.focus();
 
     const btnHapus = document.createElement("button");
+    btnHapus.innerHTML = "Hapus";
+    listBaru.appendChild(btnHapus);
 });
