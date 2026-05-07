@@ -27,11 +27,14 @@ btnTambah.addEventListener("click", function() {
         <small>${dateValue}</small> - <span class="status-teks">Progress</span>
     `;
 
-    listBaru.appendChild(span);
-    daftarTugas.appendChild(listBaru);
-    inputValue.value = "";
-    inputDate.value = ""; // Reset nilai tanggal
-    inputValue.focus();
+    // Tombol "Selesai" (Fitur Ganti Status)
+    const btnStatus = document.createElement("button");
+    btnStatus.innerHTML = "Selesai";
+    btnStatus.className = "status-btn";
+    btnStatus.onclick = function() {
+        const status = infoTugas.querySelector(".status-teks");
+        const teks = infoTugas.querySelector(".nama-tugas");
+    };
 
     const btnHapus = document.createElement("button");
     btnHapus.innerHTML = "Hapus";
