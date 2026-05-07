@@ -71,4 +71,8 @@ btnTambah.addEventListener("click", function() {
         listBaru.remove();
     };
 
+    // Menampilkan info dan tombol ke layar dalam satu baris
+    listBaru.append(infoTugas, btnStatus, btnEdit, btnHapus);
+    daftarTugas.appendChild(listBaru);
+
 });
