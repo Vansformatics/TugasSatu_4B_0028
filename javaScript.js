@@ -47,6 +47,14 @@ btnTambah.addEventListener("click", function() {
         }
     };
 
+    // Tombol Edit (Fitur Ubah Data)
+    const btnEdit = document.createElement("button");
+    btnEdit.innerHTML = "Edit";
+    btnEdit.className = "edit-btn";
+    btnEdit.onclick = function() {
+        const teksLama = infoTugas.querySelector(".nama-tugas").innerHTML;
+    };
+
     const btnHapus = document.createElement("button");
     btnHapus.innerHTML = "Hapus";
     listBaru.appendChild(btnHapus);
