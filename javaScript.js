@@ -34,6 +34,13 @@ btnTambah.addEventListener("click", function() {
     btnStatus.onclick = function() {
         const status = infoTugas.querySelector(".status-teks");
         const teks = infoTugas.querySelector(".nama-tugas");
+
+        // Logika saklar untuk mengubah status tugas
+        if (status.innerHTML === "Progress") {
+            status.innerHTML = "Done";
+            teks.style.textDecoration = "line-through"; // Coret tulisannya
+            btnStatus.innerHTML = "Batal";             // Ganti tulisan tombol
+        } 
     };
 
     const btnHapus = document.createElement("button");
