@@ -40,7 +40,11 @@ btnTambah.addEventListener("click", function() {
             status.innerHTML = "Done";
             teks.style.textDecoration = "line-through"; // Coret tulisannya
             btnStatus.innerHTML = "Batal";             // Ganti tulisan tombol
-        } 
+        } else {
+            status.innerHTML = "Progress";
+            teks.style.textDecoration = "none";         // Hapus coretan
+            btnStatus.innerHTML = "Selesai";
+        }
     };
 
     const btnHapus = document.createElement("button");
