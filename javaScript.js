@@ -63,4 +63,12 @@ btnTambah.addEventListener("click", function() {
         }
     };
 
+    // Tombol "Hapus" (Fitur Hapus Data)
+    const btnHapus = document.createElement("button");
+    btnHapus.innerHTML = "Hapus";
+    btnHapus.className = "delete-btn";
+    btnHapus.onclick = function() {
+        listBaru.remove();
+    };
+
 });
