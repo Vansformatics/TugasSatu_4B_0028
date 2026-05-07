@@ -53,9 +53,14 @@ btnTambah.addEventListener("click", function() {
     btnEdit.className = "edit-btn";
     btnEdit.onclick = function() {
         const teksLama = infoTugas.querySelector(".nama-tugas").innerHTML;
+
+        // kotak input untuk mengubah nama tugas
+        const teksBaru = prompt("Ubah tugas kamu:", teksLama);
+        
+        // Logika untuk memperbarui nama tugas jika pengguna memasukkan teks baru
+        if (teksBaru) {
+            infoTugas.querySelector(".nama-tugas").innerHTML = teksBaru;
+        }
     };
 
-    const btnHapus = document.createElement("button");
-    btnHapus.innerHTML = "Hapus";
-    listBaru.appendChild(btnHapus);
 });
