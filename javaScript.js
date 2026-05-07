@@ -3,9 +3,9 @@ const inputDate = document.getElementById("inputDate"); // Ambil elemen tanggal
 const btnTambah = document.getElementById("btnTambahTodo");
 const daftarTugas = document.getElementById("listTugas");
 
-btnTambah.addEventListener("click", function(){
-    if(inputValue.value === "") {
-        alert("Input tidak boleh kosong");
+btnTambah.addEventListener("click", function() {
+    if (inputTask.value === "" || inputDate.value === "") {
+        alert("Tugas dan Tanggal tidak boleh kosong!");
         return;
     }
 
